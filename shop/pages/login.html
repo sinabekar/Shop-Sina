@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/login.png" type="image/x-icon">
+    <title>login</title>
+</head>
+
+<body>
+
+    <div class="login">
+        <form action="" method="post">
+            <label for="">نام کاربری : </label>
+            <input type="text" name="UserName" value="" required>
+            <br>
+            <label for="">رمز عبور :</label>
+            <input type="password" name="pass" value="" required>
+            <br>
+            <input type="submit" value="ورود">
+            <br>
+            <p>فراموشی رمز عبور</p>
+            <p onclick="regester()">ثبت نام</p>
+        </form>
+    </div>
+    <div class="regester">
+        <form action="" method="post">
+            <label for="">نام کاربری : </label>
+            <input type="text" name="UserName" value="" required>
+            <br>
+            <label for="">نام کاربری : </label>
+            <input type="email" name="UserEmail" value="" required>
+            <br>
+            <label for="">رمز عبور :</label>
+            <input type="password" name="pass" value="" required>
+            <br>
+            <input type="submit" value="ثبت نام">
+            <br>
+            <p>فراموشی رمز عبور</p>
+            <p onclick="login()">ورود</p>
+        </form>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/logo.svg" type="image">
+    <title>فروشگاه سینا</title>
+    <meta name="theme-color" content="#FFF">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="container">
+                <button class="hamber-menu"><img src="./assets/images/icons/hamberMenu.png" alt="همبرگر منو"
+                        onclick="myFunction()" ondblclick="myFunctionClose()">
+                </button>
+
+                <div class="header-logo">
+                    <img src="./assets/images/logo.svg" alt="logo">
+                </div>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="./index.html">صفحه اصلی</a></li>
+                        <li><a href="./pages/category.html">محصولات</a></li>
+                        <li class="drop-down">
+                            <span> دسته ها</span>
+                            <i class="drop-down-icon"></i>
+                            <ul class="drop-down-menu">
+                                <li><a href="#">پیراهن</a></li>
+                                <li><a href="#">کفش</a></li>
+                                <li><a href="#">شلوار</a></li>
+                                <li><a href="#">جوراب</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./pages/contactUs.html">تماس با ما</a></li>
+                        <li><a href="./pages/aboutUs.html">درباره ما</a></li>
+                    </ul>
+                </nav>
+                <a href="./pages/login.html"><button class="login-btn">ثبت نام | ورود</button></a>
+                <img class="icon-shop" src="./assets/images/icons/1170576.png" alt="shop card">
+                <div class="icon-shop-num">
+                    <p class="icon-shop-num-p">0</p>
+                </div>
+            </div>
+            <div class="main-hamber" style="display: none;">
+                <a href="./index.html">صفحه اصلی</a>
+                <a href="./pages/category.html">محصولات</a>
+                <a href="./pages/contactUs.html">تماس با ما</a>
+                <a href="./pages/aboutUs.html">درباره ما</a>
+            </div>
+        </div>
+        <div class="page-intro">
+            <div class="container">
+                <div class="page-intro-right">
+                    <h1>
+                        فروشگاه آنلاین <br> شاپ سینا
+                    </h1>
+                    <div class="page-intro-right-btns">
+                        <button class="page-intro-right-btn">دانلود اپلیکیشن</button>
+                    </div>
+                    <div class="page-intro-right-btns">
+                        <button class="page-intro-right-btn">فروشگاه</button>
+                    </div>
+                </div>
+                <div class="page-intro-left">
+                    <img src="./assets/images/shopGirls.png" alt="">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="new-posts">
+            <div class="container">
+                <h2 class="p-15">جدید ترین محصولات</h2>
+                <div class="col-4">
+                    <a href="./pages/single.html">
+                        <div class="new-post-card">
+                            <div class="new-post-pic">
+                                <img src="./assets/images/dress1.jpg" alt="لباس مجلسی">
+                            </div>
+                            <div class="new-post-body">
+                                <div>
+                                    <p class="new-post-title">لباس راحتی</p>
+                                    <p class="new-post-price">250.000 تومان</p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div>
+                                    <p class="new-post-description">لباس راحتی برای خانه</p>
+                                    <p class="new-post-price-off">189.000 تومان</p>
+                                </div>
+                            </div>
+                    </a>
+                    <div class="new-post-add" onclick="myFuncAddNum()">
+                        <h2>اضافه کردن به سبد خرید</h2>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-4">
+                <a href=".//pages/single.html">
+                    <div class="new-post-card">
+                        <div class="new-post-pic"> <img src="./assets/images/dress2.jpg" alt="لباس مجلسی">
+                        </div>
+                        <div class="new-post-body">
+                            <div>
+                                <p class="new-post-title">لباس راحتی</p>
+                                <p class="new-post-price">250.000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new-post-description">لباس راحتی برای خانه</p>
+                                <p class="new-post-price-off">189.000 تومان</p>
+                            </div>
+                        </div>
+                </a>
+                <div class="new-post-add" onclick="myFuncAddNum()">
+                    <h2>اضافه کردن به سبد خرید</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <a href=".//pages/single.html">
+                <div class="new-post-card">
+                    <div class="new-post-pic"> <img src="./assets/images/dress3.jpg" alt="لباس مجلسی">
+                    </div>
+                    <div class="new-post-body">
+                        <div>
+                            <p class="new-post-title">لباس راحتی</p>
+                            <p class="new-post-price">250.000 تومان</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <p class="new-post-description">لباس راحتی برای خانه</p>
+                            <p class="new-post-price-off">189.000 تومان</p>
+                        </div>
+                    </div>
+            </a>
+            <div class="new-post-add" onclick="myFuncAddNum()">
+                <h2>اضافه کردن به سبد خرید</h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-4">
+        <a href=".//pages/single.html">
+            <div class="new-post-card">
+                <div class="new-post-pic"> <img src="./assets/images/dress4.jpg" alt="لباس مجلسی">
+                </div>
+                <div class="new-post-body">
+
+                    <div>
+                        <p class="new-post-title">لباس راحتی</p>
+                        <p class="new-post-price">250.000 تومان</p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div>
+                        <p class="new-post-description">لباس راحتی برای خانه</p>
+                        <p class="new-post-price-off">189.000 تومان</p>
+                    </div>
+                </div>
+        </a>
+        <div class="new-post-add" onclick="myFuncAddNum()">
+            <h2>اضافه کردن به سبد</h2>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="home-ad">
+        <div class="container">
+            <div class="home-ad-right">
+                <img src="./assets/images/ad1.jpg" alt="تبلیغات لباس">
+            </div>
+            <div class="home-ad-left">
+                <img src="./assets/images/ad2.png" alt="تبلیغات تیشرت">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="most-sales">
+        <div class="container">
+            <h2 class="p-15">بیشترین فروش</h2>
+            <div class="most-sales-item">
+                <div class="new-post-card">
+                    <div class="new-post-pic"> <img src="./assets/images/dress1.jpg" alt="لباس مجلسی">
+                    </div>
+                    <div class="new-post-body">
+
+
+                        <div>
+                            <p class="new-post-title">لباس راحتی</p>
+                            <p class="new-post-price">250.000 تومان</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <p class="new-post-description">لباس راحتی برای خانه</p>
+                            <p class="new-post-price-off">189.000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-sales-item">
+                <div class="new-post-card">
+                    <div class="new-post-pic"> <img src="./assets/images/dress2.jpg" alt="لباس مجلسی">
+                    </div>
+                    <div class="new-post-body">
+
+
+                        <div>
+                            <p class="new-post-title">لباس راحتی</p>
+                            <p class="new-post-price">250.000 تومان</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <p class="new-post-description">لباس راحتی برای خانه</p>
+                            <p class="new-post-price-off">189.000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-sales-item">
+                <div class="new-post-card">
+                    <div class="new-post-pic"> <img src="./assets/images/dress3.jpg" alt="لباس مجلسی">
+                    </div>
+                    <div class="new-post-body">
+                        <div>
+                            <p class="new-post-title">لباس راحتی</p>
+                            <p class="new-post-price">250.000 تومان</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <p class="new-post-description">لباس راحتی برای خانه</p>
+                            <p class="new-post-price-off">189.000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-sales-item">
+                <div class="new-post-card">
+                    <div class="new-post-pic"> <img src="./assets/images/dress4.jpg" alt="لباس مجلسی">
+                    </div>
+                    <div class="new-post-body">
+
+                        <div>
+                            <p class="new-post-title">لباس راحتی</p>
+                            <p class="new-post-price">250.000 تومان</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <p class="new-post-description">لباس راحتی برای خانه</p>
+                            <p class="new-post-price-off">189.000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-sales-item">
+                <div class="new-post-card">
+                    <div class="new-post-pic"> <img src="./assets/images/dress1.jpg" alt="لباس مجلسی">
+                    </div>
+                    <div class="new-post-body">
+                        <div>
+                            <p class="new-post-title">لباس راحتی</p>
+                            <p class="new-post-price">250.000 تومان</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <p class="new-post-description">لباس راحتی برای خانه</p>
+                            <p class="new-post-price-off">189.000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-sales-item">
+                <div class="new-post-card">
+                    <div class="new-post-pic"> <img src="./assets/images/dress4.jpg" alt="لباس مجلسی">
+                    </div>
+                    <div class="new-post-body">
+                        <div>
+                            <p class="new-post-title">لباس راحتی</p>
+                            <p class="new-post-price">250.000 تومان</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div>
+                            <p class="new-post-description">لباس راحتی برای خانه</p>
+                            <p class="new-post-price-off">189.000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="whu-us">
+        <div class="container">
+            <div class="col-4">
+                <div class="why-us-card">
+                    <img src="./assets/images/customer-service.png" alt="">
+                    <h4>پشتیبانی آنلاین</h4>
+                    <p>با پشتیبانی 24 ساعته تمام نیازهای شمارا برطرف خواهیم کرد</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="why-us-card">
+                    <img src="./assets/images/secure-shield.png" alt="">
+                    <h4>پرداخت امن </h4>
+                    <p>با پشتیبانی 24 ساعته تمام نیازهای شمارا برطرف خواهیم کرد</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="why-us-card">
+                    <img src="./assets/images/delivery.png" alt="">
+                    <h4>پست اکسپرس </h4>
+                    <p>با پشتیبانی 24 ساعته تمام نیازهای شمارا برطرف خواهیم کرد</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="why-us-card">
+                    <img src="./assets/images/shop_item.png" alt="">
+                    <h4>تنوع کالا</h4>
+                    <p>با پشتیبانی 24 ساعته تمام نیازهای شمارا برطرف خواهیم کرد</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <footer class="main-foter">
+        <div class="container">
+            <div class="main-footer-f-l">
+                <div class="main-footer-card">
+                    <h4>درباره سایت</h4>
+                    <p>
+                        با پشتیبانی 24 ساعته تمام نیازهای شما را برطـرف خواهیـم کـرد با پشتیبـانـی 24 سـاعـتـه تـمـام
+                        نـیـازهـای شـمـا را بـرطـرف خواهیم کرد.
+                    </p>
+                </div>
+            </div>
+            <div class="main-footer-mid">
+                <div class="main-footer-card">
+                    <h4>دسته ها</h4>
+                    <ul>
+                        <li><a href="">پیراهن</a></li>
+                        <li><a href="">شلوار</a></li>
+                        <li><a href="">شال</a></li>
+                        <li><a href="">جوراب</a></li>
+                        <li><a href="">کفش</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-footer-mid">
+                <div class="main-footer-card">
+                    <h4>راه های ارتباطی</h4>
+                    <ul>
+                        <li><span>شماره تلفن : 09123456789</span></li>
+                        <li><span>ایمیل: info@ShopSina.com</span></li>
+                        <li><span>آدرس : تهران فردوسی پلاک 44</span></li>[]
+                    </ul>
+                </div>
+            </div>
+            <div class="main-footer-f-l">
+                <div class="main-footer-card">
+                    <div class="main-footer-card-namad">
+                        <img src="./assets/images/enamad.png" alt="enamad">
+                        <img src="./assets/images/neshan_meli.jpg" alt="neshan_meli">
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <hr class="footer-line">
+            <div class="under-footer">
+                <p>تمامی حقوق سایت محفوظ است</p>
+                <div class="footer-social-item">
+                    <a href="#"><img src="./assets/images/icons/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="./assets/images/icons/telegram.svg" alt="telegram"></a>
+                    <a href="#"><img src="./assets/images/icons/instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script lezy="loading" src="./assets/js/script.js"></script>
+</body>
+
+</html>
