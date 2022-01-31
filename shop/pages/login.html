@@ -15,10 +15,12 @@
     <div class="login">
         <form action="" method="post">
             <label for="">نام کاربری : </label>
-            <input type="text" name="UserName" value="" required>
+            <input type="text" onkeyup="userNameValidate()" class="userName" />
+            <span class="userNameError"></span>
             <br>
             <label for="">رمز عبور :</label>
-            <input type="password" name="pass" value="" required>
+            <input type="password" onkeyup="userPasswordValidate()" class="userPassword" />
+            <span class="userPasswordError"></span>
             <br>
             <input type="submit" value="ورود">
             <br>
@@ -29,13 +31,15 @@
     <div class="regester">
         <form action="" method="post">
             <label for="">نام کاربری : </label>
-            <input type="text" name="UserName" value="" required>
+            <input onkeyup="userNameValidate()" type="text" name="UserName" value="" required>
+            <span class="userNameError"></span>
             <br>
-            <label for="">نام کاربری : </label>
+            <label for=""> ایمیل : </label>
             <input type="email" name="UserEmail" value="" required>
             <br>
             <label for="">رمز عبور :</label>
-            <input type="password" name="pass" value="" required>
+            <input onkeyup="userPasswordValidate()" type="password" name="pass" value="" required>
+            <span class="userPasswordError"></span>
             <br>
             <input type="submit" value="ثبت نام">
             <br>
@@ -44,6 +48,33 @@
         </form>
     </div>
     <script src="../assets/js/script.js"></script>
+    <script>
+        // DOM = Document Object Model
+
+        var $ = document;
+
+        var userNameInput = $.querySelector(".userName");
+        var userNameError = $.querySelector(".userNameError");
+
+        var userPasswordInput = $.querySelector(".userPassword");
+        var userPasswordError = $.querySelector(".userPasswordError");
+
+        function userNameValidate() {
+            if (userNameInput.value.length < 8) {
+                userNameError.innerHTML = "نام کاربری شما باید حداقل 8 کارکتر داشته باشد";
+            } else {
+                userNameError.innerHTML = "";
+            }
+        }
+
+        function userPasswordValidate() {
+            if (userPasswordInput.value.length < 8) {
+                userPasswordError.innerHTML = "رمز عبور شما باید حداقل 8 کارکتر داشته باشد";
+            } else {
+                userPasswordError.innerHTML = "";
+            }
+        }
+    </script>
 </body>
 
 </html>

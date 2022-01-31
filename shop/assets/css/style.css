@@ -19,16 +19,20 @@
   padding: 0;
 }
 
+.Error {
+  color: #ff0000;
+  font-size: 1rem;
+}
+
 .color-red {
   color: rgb(223, 24, 24) !important;
 }
 
-.display-flex {
-  display: flex;
-}
-
-.display-block {
-  display: block;
+.login input,
+.regester input,
+.contact-us input {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 ::-webkit-scrollbar {
@@ -146,20 +150,21 @@ a {
   position: relative;
 }
 
-.header-nav > li:hover {
-  animation: border 0.5s linear forwards;
-  border-left: 5px solid #ccc;
-  margin: 0 25px;
+.header-nav > li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #5decb0;
+  display: block;
+  transform: scale(0);
+  transition: all ease 200ms;
+  bottom: 10px;
+  border-radius: 10px;
 }
 
-@keyframes border {
-  0% {
-    right: 0;
-  }
-
-  100% {
-    right: 20px;
-  }
+.header-nav > li:hover::after {
+  transform: scale(1);
 }
 
 .header-nav li span {
@@ -326,6 +331,7 @@ a {
 .new-post-pic {
   width: 100%;
   height: 250px;
+  position: relative;
 }
 
 .new-post-pic::after {
@@ -1145,7 +1151,7 @@ a {
 
 .about-us {
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
   padding-top: 30px;
 }
@@ -1168,7 +1174,7 @@ a {
 }
 
 .about-us-left img {
-  width: 650px;
+  width: 600px;
   height: auto;
 }
 
@@ -1190,7 +1196,7 @@ a {
   );
   display: flex;
   margin: auto;
-  margin-top: 250px;
+  margin-top: 150px;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
@@ -1217,7 +1223,7 @@ a {
   border-radius: 10px;
   outline: none;
   border: 3px solid #000;
-  margin: 0 0 30px 0;
+  margin: 0 36px 30px 0;
 }
 
 .login input[type="password"],
@@ -1247,6 +1253,7 @@ a {
   /* margin-right: 12px; */
   color: #fff;
   font: 24px bold;
+  cursor: pointer;
 }
 
 .login p,
@@ -1265,6 +1272,15 @@ a {
   border: #fff solid 2px;
   border-radius: 5px;
   padding: 10px 20px;
+}
+
+.userNameError,
+.userPasswordError{
+  font-size: 18px;
+  color: red;
+  display: block;
+  margin: -15px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1150px) {
@@ -1388,6 +1404,27 @@ a {
   .login,
   .regester {
     margin-top: 70px;
+  }
+  .login input[type="text"],
+  .regester input[type="text"] {
+    width: 400px;
+    height: 50px;
+  }
+
+  .login input[type="email"],
+  .regester input[type="email"] {
+    width: 400px;
+    height: 50px;
+  }
+
+  .login input[type="password"],
+  .regester input[type="password"] {
+    width: 400px;
+    height: 50px;
+  }
+  .login input[type="submit"],
+  .regester input[type="submit"] {
+    width: 500px;
   }
   .page-intro {
     display: flex;
