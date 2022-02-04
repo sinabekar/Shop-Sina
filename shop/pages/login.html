@@ -15,12 +15,12 @@
     <div class="login">
         <form action="" method="post">
             <label for="">نام کاربری : </label>
-            <input type="text" onkeyup="userNameValidate()" class="userName" />
-            <span class="userNameError"></span>
+            <input type="text"/>
+            
             <br>
             <label for="">رمز عبور :</label>
-            <input type="password" onkeyup="userPasswordValidate()" class="userPassword" />
-            <span class="userPasswordError"></span>
+            <input type="password"/>
+            
             <br>
             <input type="submit" value="ورود">
             <br>
@@ -31,14 +31,14 @@
     <div class="regester">
         <form action="" method="post">
             <label for="">نام کاربری : </label>
-            <input onkeyup="userNameValidate()" type="text" name="UserName" value="" required>
+            <input  onkeyup="userNameValidate()" class="userName" type="text" name="UserName" value="" required>
             <span class="userNameError"></span>
             <br>
             <label for=""> ایمیل : </label>
             <input type="email" name="UserEmail" value="" required>
             <br>
             <label for="">رمز عبور :</label>
-            <input onkeyup="userPasswordValidate()" type="password" name="pass" value="" required>
+            <input type="password" onkeyup="userPasswordValidate()" class="userPassword" name="pass" value="" required>
             <span class="userPasswordError"></span>
             <br>
             <input type="submit" value="ثبت نام">
