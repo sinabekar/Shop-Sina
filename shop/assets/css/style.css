@@ -247,6 +247,11 @@ a {
   background-color: #222;
   top: -2px;
   align-items: center;
+  display: none;
+}
+
+.display{
+  display: flex;
 }
 
 .main-hamber a {
