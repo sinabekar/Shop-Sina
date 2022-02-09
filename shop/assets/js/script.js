@@ -6,7 +6,7 @@ function hamberMenu() {
   hamber.classList.toggle("display");
 }
 
-// from line 18 to 24 is for add to card product
+// from line 10 to 16 is for add to card product
 var ValueAddP = 0;
 var New;
 
@@ -15,7 +15,7 @@ function myFuncAddNum() {
   New = Add.innerHTML = Number(Add.innerHTML) + 1;
 }
 
-// frome line 27 to 39 is for login and regester form
+// frome line 18 to 53 is for login and regester form
 var Reg = $.querySelector(".regester");
 var Login = $.querySelector(".login");
 reg.style.display = "none";
