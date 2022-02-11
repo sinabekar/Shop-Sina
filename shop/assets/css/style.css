@@ -250,7 +250,7 @@ a {
   display: none;
 }
 
-.display{
+.display {
   display: flex;
 }
 
@@ -1190,6 +1190,12 @@ a {
 
 /* login */
 
+.main-ligin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login,
 .regester {
   width: 50%;
@@ -1200,8 +1206,7 @@ a {
     rgba(3, 126, 255, 1) 100%
   );
   display: flex;
-  margin: auto;
-  margin-top: 150px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
@@ -1239,6 +1244,7 @@ a {
   outline: none;
   border: 3px solid #000;
   margin: 0 12px 30px 0;
+  position: relative;
 }
 
 .login label,
@@ -1287,6 +1293,10 @@ a {
   margin: -15px;
   text-align: center;
 }
+
+/* .password-field {
+  position: relative;
+} */
 
 @media screen and (min-width: 1150px) {
   body {
@@ -1406,10 +1416,6 @@ a {
     margin-left: 162px;
   }
 
-  .login,
-  .regester {
-    margin-top: 70px;
-  }
   .login input[type="text"],
   .regester input[type="text"] {
     width: 400px;
@@ -1751,11 +1757,6 @@ a {
   .icon-shop-num {
     margin-left: -10px;
   }
-
-  .login,
-  .regester {
-    margin-top: 10px;
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -1820,11 +1821,6 @@ a {
   .regester p {
     font-size: 16px;
     margin: 25px 5px 0 20px;
-  }
-
-  .login,
-  .regester {
-    margin-top: 50px;
   }
 }
 @keyframes btn {
