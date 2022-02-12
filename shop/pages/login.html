@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/login.png" type="image/x-icon">
     <title>login</title>
+    <style>
+
+    </style>
 </head>
 
 <body class="main-ligin">
@@ -19,8 +22,14 @@
             <input type="text" />
 
             <br>
-            <label for="">رمز عبور :</label>
-            <input type="password" class="password-field" />
+            <div class="password-input">
+                <label for="">رمز عبور :</label>
+                <input type="password" class="password-field" />
+                <div class="toggle-password" onclick="toggle()">
+                    <i class="fa fa-eye-slash"></i>
+                    <i class="fa fa-eye"></i>
+                </div>
+            </div>
             <br>
             <input type="submit" value="ورود">
             <br>
@@ -48,33 +57,8 @@
         </form>
     </div>
     <script src="../assets/js/script.js"></script>
-    <script>
-        // DOM = Document Object Model
-
-        var $ = document;
-
-        var userNameInput = $.querySelector(".userName");
-        var userNameError = $.querySelector(".userNameError");
-
-        var userPasswordInput = $.querySelector(".userPassword");
-        var userPasswordError = $.querySelector(".userPasswordError");
-
-        function userNameValidate() {
-            if (userNameInput.value.length < 8) {
-                userNameError.innerHTML = "نام کاربری شما باید حداقل 8 کارکتر داشته باشد";
-            } else {
-                userNameError.innerHTML = "";
-            }
-        }
-
-        function userPasswordValidate() {
-            if (userPasswordInput.value.length < 8) {
-                userPasswordError.innerHTML = "رمز عبور شما باید حداقل 8 کارکتر داشته باشد";
-            } else {
-                userPasswordError.innerHTML = "";
-            }
-        }
-    </script>
+    <script src="../assets/js/app.js"></script>
+    
 </body>
 
 </html>
