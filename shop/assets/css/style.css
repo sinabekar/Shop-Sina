@@ -1449,6 +1449,8 @@ a {
   .about-us-left img {
     width: 500px;
     height: auto;
+    position: absolute;
+    top: 70px;
   }
 
   .icon-shop-num {
@@ -1500,6 +1502,10 @@ a {
   .login,
   .regester {
     width: 60%;
+  }
+  .about-us-right {
+    top: 350px;
+    position: absolute;
   }
 }
 
@@ -1596,6 +1602,7 @@ a {
     border-radius: 5px;
     padding: 10px 20px;
   }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -1707,6 +1714,7 @@ a {
     top: 55px;
     left: 26px;
   }
+  
 }
 
 @media screen and (max-width: 560px) {
@@ -1718,6 +1726,8 @@ a {
     width: 300px;
     animation: btn-500 linear 3.5s 1.5s reverse;
     display: block;
+  }.about-us-left img{
+    width: 380px;
   }
 }
 
@@ -1773,6 +1783,9 @@ a {
     top: 36px;
     left: 10px;
   }
+  .about-us-left img{
+    width: 310px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -1803,6 +1816,9 @@ a {
 
   .icon-shop-num {
     margin-left: -10px;
+  }
+  .about-us-left img{
+    width: 280px;
   }
 }
 
@@ -1868,6 +1884,9 @@ a {
   .regester p {
     font-size: 16px;
     margin: 25px 5px 0 20px;
+  }
+  .about-us-left img{
+    width: 230px;
   }
 }
 @keyframes btn {
