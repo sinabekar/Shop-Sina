@@ -279,6 +279,7 @@ a {
   top: -2px;
   align-items: center;
   display: none;
+  z-index: 99;
 }
 
 .display {
